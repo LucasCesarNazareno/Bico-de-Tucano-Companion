@@ -1,0 +1,44 @@
+[
+  {
+    "nome": "Lucas",
+    "descricao": "descrição de quem é",
+    "imagem": "img/Lucas.png",
+    "informacoes": "muitas informaçoes do personagem muitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagem "
+  },
+ {
+    "nome": "Vô Tito",
+    "descricao": "descrição de quem é",
+    "imagem": "img/Tito.png",
+    "informacoes": "muitas informaçoes do personagem muitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagem "
+  },
+ {
+    "nome": "Hassan",
+    "descricao": "descrição de quem é",
+    "imagem": "img/Hassan.png",
+    "informacoes": "muitas informaçoes do personagem muitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagem"
+  },
+ {
+    "nome": "Pryia",
+    "descricao": "descrição de quem é",
+    "imagem": "img/Pryia.png",
+    "informacoes": "muitas informaçoes do personagem muitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagem"
+  },
+ {
+    "nome": "Camille",
+    "descricao": "descrição de quem é",
+    "imagem": "img/Camille.png",
+    "informacoes": "muitas informaçoes do personagem muitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagem"
+  },
+ {
+    "nome": "Elena",
+    "descricao": "descrição de quem é",
+    "imagem": "img/Elena.png",
+    "informacoes": "muitas informaçoes do personagem muitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagem"
+  },
+ {
+    "nome": "Matteo",
+    "descricao": "descrição de quem é",
+    "imagem": "img/Matteo.png",
+    "informacoes": "muitas informaçoes do personagem muitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagemmuitas informaçoes do personagem"
+  }
+]

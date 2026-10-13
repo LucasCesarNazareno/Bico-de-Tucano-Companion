@@ -1,0 +1,38 @@
+[
+  {
+    "nome": "Peru",
+    "descricao": "frase sobre o pais",
+    "imagem": "img/peru.png",
+    "informacoes": "descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase "
+  },
+ {
+    "nome": "Canadá",
+    "descricao": "frase sobre o pais",
+    "imagem": "img/canada.png",
+    "informacoes": "descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase "
+  },
+ {
+    "nome": "Marrocos",
+    "descricao": "frase sobre o pais",
+    "imagem": "img/marrocos.png",
+    "informacoes": "descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase "
+  },
+ {
+    "nome": "India",
+    "descricao": "frase sobre o pais",
+    "imagem": "img/india.png",
+    "informacoes": "descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase "
+  },
+ {
+    "nome": "Italia",
+    "descricao": "frase sobre o pais",
+    "imagem": "img/italia.png",
+    "informacoes": "descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase "
+  },
+ {
+    "nome": "Brasil",
+    "descricao": "frase sobre o pais",
+    "imagem": "img/brasil.png",
+    "informacoes": "descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase descriçaõ da fase "
+  }
+]

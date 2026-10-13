@@ -1,0 +1,27 @@
+[
+  {
+    "titulo": "Personagens",
+    "descricao": "descriçao do que tem na tela",
+    "imagem": "img/Personagens.png"
+  },
+ {
+    "titulo": "Fases e Receitas",
+    "descricao": "descriçao do que tem na tela",
+    "imagem": "img/FasesReceitas.png"
+  },
+ {
+    "titulo": "Mecânicas",
+    "descricao": "descriçao do que tem na tela",
+    "imagem": "img/Mecânicas.png"
+  },
+ {
+    "titulo": "Sobre o Jogo",
+    "descricao": "descriçao do que tem na tela",
+    "imagem": "img/Jogo.png"
+  },
+ {
+    "titulo": "Athenovie",
+    "descricao": "descriçao do que tem na tela",
+    "imagem": "img/Athenovie.png"
+  }
+]
