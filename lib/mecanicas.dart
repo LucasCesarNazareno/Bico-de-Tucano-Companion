@@ -45,19 +45,16 @@ class _MecanicasPageState extends State<MecanicasPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFE8CA),
-
       appBar: AppBar(
         title: const Text("Mecânicas"),
         backgroundColor: const Color(0xFF25492D),
         foregroundColor: Colors.white,
         elevation: 1,
       ),
-
       body: SingleChildScrollView(
         child: Column(
           children: [
             const SizedBox(height: 15),
-
             ...mecanicas.asMap().entries.map((item) {
               int index = item.key;
               var dados = item.value;
@@ -67,10 +64,8 @@ class _MecanicasPageState extends State<MecanicasPage> {
                   horizontal: 16,
                   vertical: 7,
                 ),
-
                 child: GestureDetector(
                   onTap: () {
-                    // MECÂNICA 1
                     if (index == 0) {
                       Navigator.push(
                         context,
@@ -81,7 +76,6 @@ class _MecanicasPageState extends State<MecanicasPage> {
                       );
                     }
 
-                    // MECÂNICA 2
                     if (index == 1) {
                       Navigator.push(
                         context,
@@ -92,7 +86,6 @@ class _MecanicasPageState extends State<MecanicasPage> {
                       );
                     }
 
-                    // MECÂNICA 3
                     if (index == 2) {
                       Navigator.push(
                         context,
@@ -103,7 +96,6 @@ class _MecanicasPageState extends State<MecanicasPage> {
                       );
                     }
 
-                    // MECÂNICA 4
                     if (index == 3) {
                       Navigator.push(
                         context,
@@ -114,11 +106,9 @@ class _MecanicasPageState extends State<MecanicasPage> {
                       );
                     }
                   },
-
                   child: Container(
                     width: double.infinity,
                     height: 110,
-
                     decoration: BoxDecoration(
                       color: const Color(0xFFFFE8CA),
                       borderRadius: BorderRadius.circular(15),
@@ -127,16 +117,13 @@ class _MecanicasPageState extends State<MecanicasPage> {
                             .withValues(alpha: 0.20),
                       ),
                     ),
-
                     child: Row(
                       children: [
-                        // IMAGEM DA MECÂNICA
                         ClipRRect(
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(15),
                             bottomLeft: Radius.circular(15),
                           ),
-
                           child: Image.asset(
                             dados["imagem"],
                             width: 110,
@@ -144,15 +131,11 @@ class _MecanicasPageState extends State<MecanicasPage> {
                             fit: BoxFit.cover,
                           ),
                         ),
-
                         const SizedBox(width: 12),
-
-                        // TÍTULO E DESCRIÇÃO
                         Expanded(
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
-
                             children: [
                               Text(
                                 dados["titulo"],
@@ -162,9 +145,7 @@ class _MecanicasPageState extends State<MecanicasPage> {
                                   color: Color(0xFF25492D),
                                 ),
                               ),
-
                               const SizedBox(height: 5),
-
                               Text(
                                 dados["descricao"],
                                 style: const TextStyle(
@@ -176,7 +157,6 @@ class _MecanicasPageState extends State<MecanicasPage> {
                             ],
                           ),
                         ),
-
                         const Padding(
                           padding: EdgeInsets.only(right: 10),
                           child: Icon(
@@ -190,13 +170,10 @@ class _MecanicasPageState extends State<MecanicasPage> {
                 ),
               );
             }),
-
             const SizedBox(height: 20),
           ],
         ),
       ),
-
-      // BARRA DE NAVEGAÇÃO INFERIOR
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: const Color(0xFF25492D),
@@ -207,9 +184,7 @@ class _MecanicasPageState extends State<MecanicasPage> {
         showSelectedLabels: true,
         showUnselectedLabels: true,
         currentIndex: 3,
-
         onTap: (index) {
-          // INÍCIO
           if (index == 0) {
             Navigator.push(
               context,
@@ -219,7 +194,6 @@ class _MecanicasPageState extends State<MecanicasPage> {
             );
           }
 
-          // PERSONAGENS
           if (index == 1) {
             Navigator.push(
               context,
@@ -229,7 +203,6 @@ class _MecanicasPageState extends State<MecanicasPage> {
             );
           }
 
-          // FASES
           if (index == 2) {
             Navigator.push(
               context,
@@ -239,12 +212,9 @@ class _MecanicasPageState extends State<MecanicasPage> {
             );
           }
 
-          // MECÂNICAS
           if (index == 3) {
-            // Já estamos nesta tela
           }
 
-          // JOGO
           if (index == 4) {
             Navigator.push(
               context,
@@ -254,7 +224,6 @@ class _MecanicasPageState extends State<MecanicasPage> {
             );
           }
 
-          // ATHENOVIE
           if (index == 5) {
             Navigator.push(
               context,
@@ -264,7 +233,6 @@ class _MecanicasPageState extends State<MecanicasPage> {
             );
           }
         },
-
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),

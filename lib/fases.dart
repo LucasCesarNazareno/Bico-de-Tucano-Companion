@@ -45,19 +45,16 @@ class _FasesPageState extends State<FasesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFE8CA),
-
       appBar: AppBar(
         title: const Text("Fases e Receitas"),
         backgroundColor: const Color(0xFF25492D),
         foregroundColor: Colors.white,
         elevation: 1,
       ),
-
       body: SingleChildScrollView(
         child: Column(
           children: [
             const SizedBox(height: 15),
-
             ...fases.asMap().entries.map((item) {
               int index = item.key;
               var dados = item.value;
@@ -67,11 +64,8 @@ class _FasesPageState extends State<FasesPage> {
                   horizontal: 16,
                   vertical: 7,
                 ),
-
                 child: GestureDetector(
                   onTap: () {
-
-                    // PERU
                     if (index == 0) {
                       Navigator.push(
                         context,
@@ -82,7 +76,6 @@ class _FasesPageState extends State<FasesPage> {
                       );
                     }
 
-                    // CANADÁ
                     if (index == 1) {
                       Navigator.push(
                         context,
@@ -93,7 +86,6 @@ class _FasesPageState extends State<FasesPage> {
                       );
                     }
 
-                    // MARROCOS
                     if (index == 2) {
                       Navigator.push(
                         context,
@@ -104,7 +96,6 @@ class _FasesPageState extends State<FasesPage> {
                       );
                     }
 
-                    // ÍNDIA
                     if (index == 3) {
                       Navigator.push(
                         context,
@@ -115,7 +106,6 @@ class _FasesPageState extends State<FasesPage> {
                       );
                     }
 
-                    // ITÁLIA
                     if (index == 4) {
                       Navigator.push(
                         context,
@@ -126,7 +116,6 @@ class _FasesPageState extends State<FasesPage> {
                       );
                     }
 
-                    // BRASIL
                     if (index == 5) {
                       Navigator.push(
                         context,
@@ -137,11 +126,9 @@ class _FasesPageState extends State<FasesPage> {
                       );
                     }
                   },
-
                   child: Container(
                     width: double.infinity,
                     height: 110,
-
                     decoration: BoxDecoration(
                       color: const Color(0xFFFFE8CA),
                       borderRadius: BorderRadius.circular(15),
@@ -150,16 +137,13 @@ class _FasesPageState extends State<FasesPage> {
                             .withValues(alpha: 0.20),
                       ),
                     ),
-
                     child: Row(
                       children: [
-                        // IMAGEM DO PAÍS
                         ClipRRect(
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(15),
                             bottomLeft: Radius.circular(15),
                           ),
-
                           child: Image.asset(
                             dados["imagem"],
                             width: 110,
@@ -167,17 +151,13 @@ class _FasesPageState extends State<FasesPage> {
                             fit: BoxFit.cover,
                           ),
                         ),
-
                         const SizedBox(width: 12),
-
-                        // NOME E DESCRIÇÃO
                         Expanded(
                           child: Column(
                             mainAxisAlignment:
                                 MainAxisAlignment.center,
                             crossAxisAlignment:
                                 CrossAxisAlignment.start,
-
                             children: [
                               Text(
                                 dados["nome"],
@@ -187,9 +167,7 @@ class _FasesPageState extends State<FasesPage> {
                                   color: Color(0xFF25492D),
                                 ),
                               ),
-
                               const SizedBox(height: 5),
-
                               Text(
                                 dados["descricao"],
                                 style: const TextStyle(
@@ -201,7 +179,6 @@ class _FasesPageState extends State<FasesPage> {
                             ],
                           ),
                         ),
-
                         const Padding(
                           padding: EdgeInsets.only(right: 10),
                           child: Icon(
@@ -215,13 +192,10 @@ class _FasesPageState extends State<FasesPage> {
                 ),
               );
             }),
-
             const SizedBox(height: 20),
           ],
         ),
       ),
-
-      // BARRA DE NAVEGAÇÃO INFERIOR
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: const Color(0xFF25492D),
@@ -232,10 +206,7 @@ class _FasesPageState extends State<FasesPage> {
         showSelectedLabels: true,
         showUnselectedLabels: true,
         currentIndex: 2,
-
         onTap: (index) {
-
-          // INÍCIO
           if (index == 0) {
             Navigator.push(
               context,
@@ -245,7 +216,6 @@ class _FasesPageState extends State<FasesPage> {
             );
           }
 
-          // PERSONAGENS
           if (index == 1) {
             Navigator.push(
               context,
@@ -255,12 +225,9 @@ class _FasesPageState extends State<FasesPage> {
             );
           }
 
-          // FASES
           if (index == 2) {
-            // Já estamos nesta tela
           }
 
-          // MECÂNICAS
           if (index == 3) {
             Navigator.push(
               context,
@@ -270,7 +237,6 @@ class _FasesPageState extends State<FasesPage> {
             );
           }
 
-          // JOGO
           if (index == 4) {
             Navigator.push(
               context,
@@ -280,7 +246,6 @@ class _FasesPageState extends State<FasesPage> {
             );
           }
 
-          // ATHENOVIE
           if (index == 5) {
             Navigator.push(
               context,
@@ -290,7 +255,6 @@ class _FasesPageState extends State<FasesPage> {
             );
           }
         },
-
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),

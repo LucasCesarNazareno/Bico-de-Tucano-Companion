@@ -15,7 +15,6 @@ class AthenoviePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFFFFFFF),
 
-      // APP BAR
       appBar: AppBar(
         title: const Text("Athenovie"),
         centerTitle: true,
@@ -23,7 +22,6 @@ class AthenoviePage extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
 
-      // CONTEÚDO DA PÁGINA
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -35,7 +33,6 @@ class AthenoviePage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
 
-            // PAINEL SOBREPOSTO À IMAGEM
             Transform.translate(
               offset: const Offset(0, -25),
 
@@ -54,7 +51,6 @@ class AthenoviePage extends StatelessWidget {
                 child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // TÍTULO
                     Text(
                       "Sobre a Athenovie",
                       style: TextStyle(
@@ -66,7 +62,6 @@ class AthenoviePage extends StatelessWidget {
 
                     SizedBox(height: 5),
 
-                    // SLOGAN
                     Text(
                       "Tecnologia pensada para a sua vida",
                       style: TextStyle(
@@ -79,7 +74,6 @@ class AthenoviePage extends StatelessWidget {
 
                     SizedBox(height: 20),
 
-                    // INFORMAÇÕES DA EMPRESA
                     Text(
                       "Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa ",
                       style: TextStyle(
@@ -96,7 +90,6 @@ class AthenoviePage extends StatelessWidget {
         ),
       ),
 
-      // BARRA DE NAVEGAÇÃO INFERIOR
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: const Color(0xFF7B2FBE),
@@ -109,7 +102,6 @@ class AthenoviePage extends StatelessWidget {
         currentIndex: 5,
 
         onTap: (index) {
-          // INÍCIO
           if (index == 0) {
             Navigator.push(
               context,
@@ -119,7 +111,6 @@ class AthenoviePage extends StatelessWidget {
             );
           }
 
-          // PERSONAGENS
           if (index == 1) {
             Navigator.push(
               context,
@@ -129,7 +120,6 @@ class AthenoviePage extends StatelessWidget {
             );
           }
 
-          // FASES
           if (index == 2) {
             Navigator.push(
               context,
@@ -139,7 +129,6 @@ class AthenoviePage extends StatelessWidget {
             );
           }
 
-          // MECÂNICAS
           if (index == 3) {
             Navigator.push(
               context,
@@ -149,7 +138,6 @@ class AthenoviePage extends StatelessWidget {
             );
           }
 
-          // JOGO
           if (index == 4) {
             Navigator.push(
               context,
@@ -159,9 +147,7 @@ class AthenoviePage extends StatelessWidget {
             );
           }
 
-          // ATHENOVIE
           if (index == 5) {
-            // Já estamos nesta página
           }
         },
 

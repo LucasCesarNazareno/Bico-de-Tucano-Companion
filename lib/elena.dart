@@ -13,14 +13,12 @@ class ElenaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFE8CA),
-
       appBar: AppBar(
         title: Text(personagem["nome"]),
         centerTitle: true,
         backgroundColor: const Color(0xFF25492D),
         foregroundColor: Colors.white,
       ),
-
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -30,7 +28,6 @@ class ElenaPage extends StatelessWidget {
               height: 420,
               fit: BoxFit.cover,
             ),
-
             Transform.translate(
               offset: const Offset(0, -25),
               child: Container(

@@ -14,35 +14,26 @@ class JogoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFE8CA),
-
-      // APP BAR
       appBar: AppBar(
         title: const Text("Sobre o Jogo"),
         centerTitle: true,
         backgroundColor: const Color(0xFF25492D),
         foregroundColor: Colors.white,
       ),
-
-      // CONTEÚDO DA PÁGINA
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // IMAGEM GRANDE
             Image.asset(
               "img/logoJogo.png",
               width: double.infinity,
               height: 420,
               fit: BoxFit.cover,
             ),
-
-            // PAINEL SOBREPOSTO À IMAGEM
             Transform.translate(
               offset: const Offset(0, -25),
-
               child: Container(
                 width: double.infinity,
                 padding: const EdgeInsets.fromLTRB(24, 28, 24, 35),
-
                 decoration: const BoxDecoration(
                   color: Color(0xFFFFE8CA),
                   borderRadius: BorderRadius.only(
@@ -50,11 +41,9 @@ class JogoPage extends StatelessWidget {
                     topRight: Radius.circular(30),
                   ),
                 ),
-
                 child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // TÍTULO
                     Text(
                       "Bico de Tucano: O Legado de Tito",
                       style: TextStyle(
@@ -63,9 +52,7 @@ class JogoPage extends StatelessWidget {
                         color: Color(0xFF25492D),
                       ),
                     ),
-
                     SizedBox(height: 5),
-                    // INFORMAÇÕES SOBRE O JOGO
                     Text(
                       "texto explicando o jogo texto explicando o jogo texto explicando o jogo texto explicando o jogo texto explicando o jogo texto explicando o jogo texto explicando o jogo texto explicando o jogo texto explicando o jogo texto explicando o jogo texto explicando o jogo texto explicando o jogo ",
                       style: TextStyle(
@@ -81,8 +68,6 @@ class JogoPage extends StatelessWidget {
           ],
         ),
       ),
-
-      // BARRA DE NAVEGAÇÃO INFERIOR
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: const Color(0xFF25492D),
@@ -93,9 +78,7 @@ class JogoPage extends StatelessWidget {
         showSelectedLabels: true,
         showUnselectedLabels: true,
         currentIndex: 4,
-
         onTap: (index) {
-          // INÍCIO
           if (index == 0) {
             Navigator.push(
               context,
@@ -105,7 +88,6 @@ class JogoPage extends StatelessWidget {
             );
           }
 
-          // PERSONAGENS
           if (index == 1) {
             Navigator.push(
               context,
@@ -115,7 +97,6 @@ class JogoPage extends StatelessWidget {
             );
           }
 
-          // FASES
           if (index == 2) {
             Navigator.push(
               context,
@@ -125,7 +106,6 @@ class JogoPage extends StatelessWidget {
             );
           }
 
-          // MECÂNICAS
           if (index == 3) {
             Navigator.push(
               context,
@@ -135,12 +115,9 @@ class JogoPage extends StatelessWidget {
             );
           }
 
-          // JOGO
           if (index == 4) {
-            // Já estamos nesta página
           }
 
-          // ATHENOVIE
           if (index == 5) {
             Navigator.push(
               context,
@@ -150,7 +127,6 @@ class JogoPage extends StatelessWidget {
             );
           }
         },
-
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),

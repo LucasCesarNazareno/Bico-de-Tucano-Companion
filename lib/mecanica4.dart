@@ -13,33 +13,26 @@ class Mecanica4Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFE8CA),
-
       appBar: AppBar(
         title: Text(mecanica["titulo"]),
         centerTitle: true,
         backgroundColor: const Color(0xFF25492D),
         foregroundColor: Colors.white,
       ),
-
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // IMAGEM GRANDE
             Image.asset(
               mecanica["imagem"],
               width: double.infinity,
               height: 420,
               fit: BoxFit.cover,
             ),
-
-            // PAINEL DE INFORMAÇÕES
             Transform.translate(
               offset: const Offset(0, -25),
-
               child: Container(
                 width: double.infinity,
                 padding: const EdgeInsets.fromLTRB(24, 28, 24, 35),
-
                 decoration: const BoxDecoration(
                   color: Color(0xFFFFE8CA),
                   borderRadius: BorderRadius.only(
@@ -47,11 +40,9 @@ class Mecanica4Page extends StatelessWidget {
                     topRight: Radius.circular(30),
                   ),
                 ),
-
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // TÍTULO
                     Text(
                       mecanica["titulo"],
                       style: const TextStyle(
@@ -60,10 +51,7 @@ class Mecanica4Page extends StatelessWidget {
                         color: Color(0xFF25492D),
                       ),
                     ),
-
                     const SizedBox(height: 5),
-
-                    // DESCRIÇÃO
                     Text(
                       mecanica["descricao"] ?? "",
                       style: const TextStyle(
@@ -72,10 +60,7 @@ class Mecanica4Page extends StatelessWidget {
                         height: 1.5,
                       ),
                     ),
-
                     const SizedBox(height: 20),
-
-                    // INFORMAÇÕES
                     Text(
                       mecanica["informacoes"] ?? "",
                       style: const TextStyle(

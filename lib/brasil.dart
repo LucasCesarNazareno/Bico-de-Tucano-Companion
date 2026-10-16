@@ -1,7 +1,11 @@
 
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-class BrasilPage extends StatelessWidget {
+import 'receitaBrasil.dart';
+
+class BrasilPage extends StatefulWidget {
   final Map<String, dynamic> fase;
 
   const BrasilPage({
@@ -10,12 +14,38 @@ class BrasilPage extends StatelessWidget {
   });
 
   @override
+  State<BrasilPage> createState() => _BrasilPageState();
+}
+
+class _BrasilPageState extends State<BrasilPage> {
+  List receitas = [];
+
+  @override
+  void initState() {
+    super.initState();
+    carregarJson();
+  }
+
+  Future<void> carregarJson() async {
+    String dados =
+        await rootBundle.loadString('assets/receitas.json');
+
+    if (!mounted) return;
+
+    setState(() {
+      receitas = json.decode(dados)
+          .where((receita) => receita["pais"] == "Brasil")
+          .toList();
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFE8CA),
 
       appBar: AppBar(
-        title: Text(fase["nome"]),
+        title: Text(widget.fase["nome"]),
         centerTitle: true,
         backgroundColor: const Color(0xFF25492D),
         foregroundColor: Colors.white,
@@ -24,15 +54,13 @@ class BrasilPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // IMAGEM GRANDE
             Image.asset(
-              fase["imagem"],
+              widget.fase["imagem"],
               width: double.infinity,
               height: 420,
               fit: BoxFit.cover,
             ),
 
-            // PAINEL DE INFORMAÇÕES
             Transform.translate(
               offset: const Offset(0, -25),
               child: Container(
@@ -50,9 +78,8 @@ class BrasilPage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // NOME
                     Text(
-                      fase["nome"],
+                      widget.fase["nome"],
                       style: const TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
@@ -62,9 +89,8 @@ class BrasilPage extends StatelessWidget {
 
                     const SizedBox(height: 5),
 
-                    // DESCRIÇÃO
                     Text(
-                      fase["descricao"] ?? "",
+                      widget.fase["descricao"] ?? "",
                       style: const TextStyle(
                         fontSize: 16,
                         color: Color(0xFF344C38),
@@ -74,15 +100,97 @@ class BrasilPage extends StatelessWidget {
 
                     const SizedBox(height: 20),
 
-                    // INFORMAÇÕES
                     Text(
-                      fase["informacoes"] ?? "",
+                      widget.fase["informacoes"] ?? "",
                       style: const TextStyle(
                         fontSize: 15,
                         color: Color(0xFF344C38),
                         height: 1.6,
                       ),
                     ),
+
+                    if (receitas.isNotEmpty) ...[
+                      const SizedBox(height: 30),
+
+                      const Text(
+                        "Receitas desta fase",
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF25492D),
+                        ),
+                      ),
+
+                      const SizedBox(height: 15),
+
+                      ...receitas.map((receita) {
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 12),
+
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                    ReceitaBrasilPage(receita: receita),
+                                ),
+                              );
+                            },
+
+                            child: Container(
+                              height: 95,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFFFE8CA),
+                                borderRadius: BorderRadius.circular(15),
+                                border: Border.all(
+                                  color: const Color(0xFF25492D)
+                                      .withValues(alpha: 0.20),
+                                ),
+                              ),
+
+                              child: Row(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: const BorderRadius.only(
+                                      topLeft: Radius.circular(15),
+                                      bottomLeft: Radius.circular(15),
+                                    ),
+                                    child: Image.asset(
+                                      receita["imagem"],
+                                      width: 95,
+                                      height: 95,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+
+                                  const SizedBox(width: 12),
+
+                                  Expanded(
+                                    child: Text(
+                                      receita["nome"],
+                                      style: const TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xFF25492D),
+                                      ),
+                                    ),
+                                  ),
+
+                                  const Padding(
+                                    padding: EdgeInsets.only(right: 10),
+                                    child: Icon(
+                                      Icons.chevron_right,
+                                      color: Color(0xFF25492D),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        );
+                      }),
+                    ],
                   ],
                 ),
               ),

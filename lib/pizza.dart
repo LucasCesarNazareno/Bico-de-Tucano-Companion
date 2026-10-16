@@ -13,14 +13,12 @@ class PizzaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFE8CA),
-
       appBar: AppBar(
         title: Text(receita["nome"]),
         centerTitle: true,
         backgroundColor: const Color(0xFF25492D),
         foregroundColor: Colors.white,
       ),
-
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -30,13 +28,11 @@ class PizzaPage extends StatelessWidget {
               height: 420,
               fit: BoxFit.cover,
             ),
-
             Transform.translate(
               offset: const Offset(0, -25),
               child: Container(
                 width: double.infinity,
                 padding: const EdgeInsets.fromLTRB(24, 28, 24, 35),
-
                 decoration: const BoxDecoration(
                   color: Color(0xFFFFE8CA),
                   borderRadius: BorderRadius.only(
@@ -44,7 +40,6 @@ class PizzaPage extends StatelessWidget {
                     topRight: Radius.circular(30),
                   ),
                 ),
-
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -56,9 +51,7 @@ class PizzaPage extends StatelessWidget {
                         color: Color(0xFF25492D),
                       ),
                     ),
-
                     const SizedBox(height: 5),
-
                     Text(
                       receita["pais"] ?? "",
                       style: const TextStyle(
@@ -66,9 +59,7 @@ class PizzaPage extends StatelessWidget {
                         color: Color(0xFF667466),
                       ),
                     ),
-
                     const SizedBox(height: 15),
-
                     Text(
                       receita["descricao"] ?? "",
                       style: const TextStyle(
@@ -77,9 +68,7 @@ class PizzaPage extends StatelessWidget {
                         height: 1.5,
                       ),
                     ),
-
                     const SizedBox(height: 25),
-
                     const Text(
                       "Massa",
                       style: TextStyle(
@@ -88,11 +77,9 @@ class PizzaPage extends StatelessWidget {
                         color: Color(0xFF25492D),
                       ),
                     ),
-
                     const SizedBox(height: 10),
-
                     ...List<String>.from(
-                      receita["Massa"] ?? [],
+                      receita["ingrediente1"] ?? [],
                     ).map((ingrediente) {
                       return Padding(
                         padding: const EdgeInsets.symmetric(vertical: 4),
@@ -106,9 +93,7 @@ class PizzaPage extends StatelessWidget {
                         ),
                       );
                     }),
-
                     const SizedBox(height: 25),
-
                     const Text(
                       "Recheio",
                       style: TextStyle(
@@ -117,11 +102,9 @@ class PizzaPage extends StatelessWidget {
                         color: Color(0xFF25492D),
                       ),
                     ),
-
                     const SizedBox(height: 10),
-
                     ...List<String>.from(
-                      receita["Recheio"] ?? [],
+                      receita["ingrediente2"] ?? [],
                     ).map((ingrediente) {
                       return Padding(
                         padding: const EdgeInsets.symmetric(vertical: 4),

@@ -4,14 +4,14 @@
     "descricao": "descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
     "imagem": "img/ceviche.png",
     "pais": "Peru",
-    "Ceviche": [
+    "ingrediente1": [
         "½ banana-da-terra madura cozida",
         "Folhas de coentro",
         "½ cebola roxa",
         "Pitada de sal marinho",
         "Pimenta dedo de moça em rodelas ou cubinhos"
     ],
-    "Leite de tigre": [
+    "ingrediente2": [
         "1L Leite de coco",
         "Suco de 2 limões taiti",
         "1 talo de aipo",
@@ -27,7 +27,7 @@
     "descricao": "descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
     "imagem": "img/nanaimo.png",
     "pais": "Canadá",
-    "Base de biscoitos": [
+    "ingrediente1": [
         "1 Xícara e ¼ de biscoitos veganos triturados",
         "1 Xícara de coco ralado sem açúcar",
         "Nozes picadas",
@@ -35,13 +35,13 @@
         "¼ de xícara de açúcar",
         "5 colheres de sopa de cacau em pó"
     ],
-    "Creme de confeiteiro": [
+    "ingrediente2": [
         "½ Xícara de manteiga vegetal",
         "2 colheres de sopa de leite de coco",
         "1 colher de chá de extrato de baunilha",
         "2 xícaras de açúcar de confeiteiro"
     ],
-    "Ganache de chocolate": [
+    "ingrediente3": [
         "1113 g de chocolate amarga ou meio amargo, com duas colheres de sopa de manteiga vegetal"
     ]
   },
@@ -50,7 +50,7 @@
     "descricao": "descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
     "imagem": "img/pizza.png",
     "pais": "Itália",
-    "Massa": [
+    "ingrediente1": [
         "2 ½ Xícaras de farinha de trigo",
         "200 ml de água",
         "1 colher de sopa de azeite",
@@ -58,7 +58,7 @@
         "5 g de fermento biológicos seco",
         "1 colher de sopa de açúcar comum"
     ],
-    "Recheio": [
+    "ingrediente2": [
         "200 g de requeijão vegano de castanhasso1",
         "1 xícara de molho de tomate",
         "Manjericão a gosto",
@@ -71,7 +71,7 @@
     "descricao": "descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
     "imagem": "img/chana.png",
     "pais": "India",
-    "ingredientes": [
+    "ingrediente1": [
         "500 g de grão-de-bico",
         "1 cebola roxa picada",
         "4 dentes de alho picados",
@@ -88,6 +88,32 @@
         "1 colher de café de noz-moscada em pó",
         "1 colher de café de erva-doce em grãos",
         "Sal a gosto"
+    ]
+  },
+ {
+    "nome": "vai ver ainda",
+    "descricao": "descricaaao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
+    "imagem": "img/receitaMarrocos.png",
+    "pais": "Marrocos",
+    "ingrediente1": [
+        "numero1",
+        "numero2",
+        "numero3",
+        "numero4",
+        "numero5"
+    ]
+  },
+ {
+    "nome": "a decidir",
+    "descricao": "descricaaao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
+    "imagem": "img/receitaBrasil.png",
+    "pais": "Brasil",
+    "ingrediente1": [
+        "numero1",
+        "numero2",
+        "numero3",
+        "numero4",
+        "numero5"
     ]
   }
 ]

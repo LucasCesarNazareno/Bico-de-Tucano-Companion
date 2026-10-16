@@ -54,32 +54,27 @@ class _MainAppState extends State<MainApp> {
           return Stack(
             children: [
 
-              // FUNDO CREME
               Positioned.fill(
                 child: Container(
                   color: const Color(0xFFFFE8CA),
                 ),
               ),
 
-              // CONTEÚDO DA TELA
               Positioned.fill(
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
 
-                      // LOGO E CAMADA CREME SOBREPOSTA
                       Stack(
                         clipBehavior: Clip.none,
                         children: [
 
-                          // LOGO SEM CANTOS ARREDONDADOS
                           Image.asset(
                             'img/LogoBicoTucano.jpg',
                             width: double.infinity,
                             fit: BoxFit.contain,
                           ),
 
-                          // FUNDO CREME SOBRE A PARTE INFERIOR DA LOGO
                           Positioned(
                             left: 0,
                             right: 0,
@@ -98,7 +93,6 @@ class _MainAppState extends State<MainApp> {
                         ],
                       ),
 
-                      // CARDS NA MESMA ÁREA CREME
                       Container(
                         width: double.infinity,
                         color: const Color(0xFFFFE8CA),
@@ -107,7 +101,6 @@ class _MainAppState extends State<MainApp> {
 
                             const SizedBox(height: 20),
 
-                            // CARDS DO JSON
                             ...inicio.asMap().entries.map((item) {
                               int index = item.key;
                               var dados = item.value;
@@ -121,7 +114,6 @@ class _MainAppState extends State<MainApp> {
                                 child: GestureDetector(
                                   onTap: () {
 
-                                    // PERSONAGENS
                                     if (index == 0) {
                                       Navigator.push(
                                         context,
@@ -135,7 +127,6 @@ class _MainAppState extends State<MainApp> {
                                       );
                                     }
 
-                                    // FASES E RECEITAS
                                     if (index == 1) {
                                       Navigator.push(
                                         context,
@@ -149,7 +140,6 @@ class _MainAppState extends State<MainApp> {
                                       );
                                     }
 
-                                    // MECÂNICAS
                                     if (index == 2) {
                                       Navigator.push(
                                         context,
@@ -163,7 +153,6 @@ class _MainAppState extends State<MainApp> {
                                       );
                                     }
 
-                                    // SOBRE O JOGO
                                     if (index == 3) {
                                       Navigator.push(
                                         context,
@@ -177,7 +166,6 @@ class _MainAppState extends State<MainApp> {
                                       );
                                     }
 
-                                    // ATHENOVIE
                                     if (index == 4) {
                                       Navigator.push(
                                         context,
@@ -206,7 +194,6 @@ class _MainAppState extends State<MainApp> {
                                     child: Row(
                                       children: [
 
-                                        // IMAGEM DO CARD
                                         ClipRRect(
                                           borderRadius:
                                               const BorderRadius.only(
@@ -223,7 +210,6 @@ class _MainAppState extends State<MainApp> {
 
                                         const SizedBox(width: 12),
 
-                                        // TÍTULO E DESCRIÇÃO
                                         Expanded(
                                           child: Column(
                                             mainAxisAlignment:
@@ -286,7 +272,6 @@ class _MainAppState extends State<MainApp> {
         },
       ),
 
-      // BARRA DE NAVEGAÇÃO INFERIOR
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
 
@@ -304,12 +289,9 @@ class _MainAppState extends State<MainApp> {
 
         onTap: (index) {
 
-          // INÍCIO
           if (index == 0) {
-            // Já estamos na tela inicial
           }
 
-          // PERSONAGENS
           if (index == 1) {
             Navigator.push(
               context,
@@ -323,7 +305,6 @@ class _MainAppState extends State<MainApp> {
             );
           }
 
-          // FASES E RECEITAS
           if (index == 2) {
             Navigator.push(
               context,
@@ -337,7 +318,6 @@ class _MainAppState extends State<MainApp> {
             );
           }
 
-          // MECÂNICAS
           if (index == 3) {
             Navigator.push(
               context,
@@ -351,7 +331,6 @@ class _MainAppState extends State<MainApp> {
             );
           }
 
-          // SOBRE O JOGO
           if (index == 4) {
             Navigator.push(
               context,
@@ -365,7 +344,6 @@ class _MainAppState extends State<MainApp> {
             );
           }
 
-          // ATHENOVIE
           if (index == 5) {
             Navigator.push(
               context,

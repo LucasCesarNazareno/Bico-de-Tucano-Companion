@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -73,7 +72,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
                 child: GestureDetector(
                   onTap: () {
 
-                    // LUCAS
                     if (index == 0) {
                       Navigator.push(
                         context,
@@ -84,7 +82,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
                       );
                     }
 
-                    // VÔ TITO
                     if (index == 1) {
                       Navigator.push(
                         context,
@@ -95,7 +92,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
                       );
                     }
 
-                    // HASSAN
                     if (index == 2) {
                       Navigator.push(
                         context,
@@ -106,7 +102,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
                       );
                     }
 
-                    // PRYIA
                     if (index == 3) {
                       Navigator.push(
                         context,
@@ -117,7 +112,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
                       );
                     }
 
-                    // CAMILLE
                     if (index == 4) {
                       Navigator.push(
                         context,
@@ -128,7 +122,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
                       );
                     }
 
-                    // ELENA
                     if (index == 5) {
                       Navigator.push(
                         context,
@@ -139,7 +132,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
                       );
                     }
 
-                    // MATTEO
                     if (index == 6) {
                       Navigator.push(
                         context,
@@ -166,7 +158,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
 
                     child: Row(
                       children: [
-                        // IMAGEM DO PERSONAGEM
                         ClipRRect(
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(15),
@@ -183,7 +174,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
 
                         const SizedBox(width: 12),
 
-                        // NOME E DESCRIÇÃO
                         Expanded(
                           child: Column(
                             mainAxisAlignment:
@@ -234,7 +224,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
         ),
       ),
 
-      // BARRA DE NAVEGAÇÃO INFERIOR
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: const Color(0xFF25492D),
@@ -248,7 +237,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
 
         onTap: (index) {
 
-          // INÍCIO
           if (index == 0) {
             Navigator.push(
               context,
@@ -258,12 +246,9 @@ class _PersonagensPageState extends State<PersonagensPage> {
             );
           }
 
-          // PERSONAGENS
           if (index == 1) {
-            // Já estamos nesta tela
           }
 
-          // FASES E RECEITAS
           if (index == 2) {
             Navigator.push(
               context,
@@ -273,7 +258,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
             );
           }
 
-          // MECÂNICAS
           if (index == 3) {
             Navigator.push(
               context,
@@ -283,7 +267,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
             );
           }
 
-          // SOBRE O JOGO
           if (index == 4) {
             Navigator.push(
               context,
@@ -293,7 +276,6 @@ class _PersonagensPageState extends State<PersonagensPage> {
             );
           }
 
-          // ATHENOVIE
           if (index == 5) {
             Navigator.push(
               context,

@@ -43,32 +43,26 @@ class _PeruPageState extends State<PeruPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFFE8CA),
-
       appBar: AppBar(
         title: Text(widget.fase["nome"]),
         centerTitle: true,
         backgroundColor: const Color(0xFF25492D),
         foregroundColor: Colors.white,
       ),
-
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // IMAGEM GRANDE
             Image.asset(
               widget.fase["imagem"],
               width: double.infinity,
               height: 420,
               fit: BoxFit.cover,
             ),
-
-            // PAINEL DE INFORMAÇÕES
             Transform.translate(
               offset: const Offset(0, -25),
               child: Container(
                 width: double.infinity,
                 padding: const EdgeInsets.fromLTRB(24, 28, 24, 35),
-
                 decoration: const BoxDecoration(
                   color: Color(0xFFFFE8CA),
                   borderRadius: BorderRadius.only(
@@ -76,11 +70,9 @@ class _PeruPageState extends State<PeruPage> {
                     topRight: Radius.circular(30),
                   ),
                 ),
-
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // NOME
                     Text(
                       widget.fase["nome"],
                       style: const TextStyle(
@@ -89,10 +81,7 @@ class _PeruPageState extends State<PeruPage> {
                         color: Color(0xFF25492D),
                       ),
                     ),
-
                     const SizedBox(height: 5),
-
-                    // DESCRIÇÃO
                     Text(
                       widget.fase["descricao"] ?? "",
                       style: const TextStyle(
@@ -101,10 +90,7 @@ class _PeruPageState extends State<PeruPage> {
                         height: 1.5,
                       ),
                     ),
-
                     const SizedBox(height: 20),
-
-                    // INFORMAÇÕES DA FASE
                     Text(
                       widget.fase["informacoes"] ?? "",
                       style: const TextStyle(
@@ -113,11 +99,8 @@ class _PeruPageState extends State<PeruPage> {
                         height: 1.6,
                       ),
                     ),
-
-                    // RECEITAS DESTA FASE
                     if (receitas.isNotEmpty) ...[
                       const SizedBox(height: 30),
-
                       const Text(
                         "Receitas desta fase",
                         style: TextStyle(
@@ -126,24 +109,20 @@ class _PeruPageState extends State<PeruPage> {
                           color: Color(0xFF25492D),
                         ),
                       ),
-
                       const SizedBox(height: 15),
-
                       ...receitas.map((receita) {
                         return Padding(
                           padding: const EdgeInsets.only(bottom: 12),
-
                           child: GestureDetector(
                             onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) =>
-                                    CevichePage(receita: receita),
+                                      CevichePage(receita: receita),
                                 ),
                               );
                             },
-
                             child: Container(
                               height: 95,
                               decoration: BoxDecoration(
@@ -154,7 +133,6 @@ class _PeruPageState extends State<PeruPage> {
                                       .withValues(alpha: 0.20),
                                 ),
                               ),
-
                               child: Row(
                                 children: [
                                   ClipRRect(
@@ -169,9 +147,7 @@ class _PeruPageState extends State<PeruPage> {
                                       fit: BoxFit.cover,
                                     ),
                                   ),
-
                                   const SizedBox(width: 12),
-
                                   Expanded(
                                     child: Text(
                                       receita["nome"],
@@ -182,7 +158,6 @@ class _PeruPageState extends State<PeruPage> {
                                       ),
                                     ),
                                   ),
-
                                   const Padding(
                                     padding: EdgeInsets.only(right: 10),
                                     child: Icon(
