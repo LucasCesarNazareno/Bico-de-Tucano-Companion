@@ -1,17 +1,20 @@
-# bico_de_tucano_companion
+#  Bico de Tucano: Mobile Companion
 
-A new Flutter project.
+Bem-vindo à documentação oficial do aplicativo **Bico de Tucano Companion**, desenvolvido em **Flutter** e **Dart** para acompanhar o jogo narrativo e culinário criado pelos alunos da **Etec Professor Basilides de Godoy** sob o selo **Athenovie** ("*Tecnologia pensada para a sua vida*").
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Navegação da Wiki
 
-A few resources to get you started if this is your first Flutter project:
+* [[Visão Geral e Arquitetura|Visao-Geral]]
+* [[História e Lore|Historia]]
+* [[Personagens|Personagens]]
+* [[Fases, Países e Receitas|Fases-e-Receitas]]
+* [[Mecanicas do Jogo|Mecanicas]]
+* [[Sobre a Athenovie|Athenovie]]
+* [[Documentação de Código|Codigos]]
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##  Sobre o Projeto
+Este aplicativo tem como objetivo centralizar o universo do jogo, servindo como um guia interativo para os jogadores acompanharem a jornada de Lucas, conhecerem as receitas vegetarianas e veganas adaptadas de vários países e explorarem as mecânicas de gameplay.
