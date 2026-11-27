@@ -4,17 +4,5 @@ Bem-vindo à documentação oficial do aplicativo **Bico de Tucano Companion**, 
 
 ---
 
-##  Navegação da Wiki
-
-* [[Visão Geral e Arquitetura|Visao-Geral]]
-* [[História e Lore|Historia]]
-* [[Personagens|Personagens]]
-* [[Fases, Países e Receitas|Fases-e-Receitas]]
-* [[Mecanicas do Jogo|Mecanicas]]
-* [[Sobre a Athenovie|Athenovie]]
-* [[Documentação de Código|Codigos]]
-
----
-
 ##  Sobre o Projeto
 Este aplicativo tem como objetivo centralizar o universo do jogo, servindo como um guia interativo para os jogadores acompanharem a jornada de Lucas, conhecerem as receitas vegetarianas e veganas adaptadas de vários países e explorarem as mecânicas de gameplay.
