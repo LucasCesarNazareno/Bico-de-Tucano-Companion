@@ -24,7 +24,7 @@ class JogoPage extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              "img/logoJogo.png",
+              "img/bico.jpeg",
               width: double.infinity,
               height: 420,
               fit: BoxFit.cover,

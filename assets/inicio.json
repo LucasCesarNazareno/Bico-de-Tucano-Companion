@@ -2,26 +2,26 @@
   {
     "titulo": "Personagens",
     "descricao": "",
-    "imagem": "img/Personagens.png"
+    "imagem": "img/personagem.jpeg"
   },
  {
     "titulo": "Fases e Receitas",
     "descricao": "",
-    "imagem": "img/FasesReceitas.png"
+    "imagem": "img/fases.jpeg"
   },
  {
     "titulo": "Mecânicas",
     "descricao": "",
-    "imagem": "img/Mecânicas.png"
+    "imagem": "img/m.png"
   },
  {
     "titulo": "Sobre o Jogo",
     "descricao": "",
-    "imagem": "img/Jogo.png"
+    "imagem": "img/jogo.jpeg"
   },
  {
     "titulo": "Athenovie",
     "descricao": "",
-    "imagem": "img/Athenovie.png"
+    "imagem": "img/athenovie.jpeg"
   }
 ]

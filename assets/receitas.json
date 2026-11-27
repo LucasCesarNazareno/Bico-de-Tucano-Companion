@@ -2,7 +2,7 @@
   {
     "nome": "Ceviche vegano com banana-da-terra",
     "descricao": "O ceviche é um prato muito conhecido da culinária peruana, tradicionalmente preparado com peixe e temperos cítricos. Na nossa versão, ele ganha uma adaptação vegana, utilizando banana-da-terra como ingrediente principal. Uma receita diferente, refrescante e cheia de sabores! ",
-    "imagem": "img/ceviche.png",
+    "imagem": "img/ceviche.jpeg",
     "pais": "Peru",
     "ingrediente1": [
         "½ banana-da-terra madura cozida",
@@ -48,7 +48,7 @@
  {
     "nome": "Pizza vegana",
     "descricao": "Quem não ama uma boa pizza? Esse prato é um dos maiores símbolos da culinária italiana e conquistou pessoas no mundo inteiro. Na nossa fase, Lucas aprende a preparar pizzas vegetarianas, explorando diferentes ingredientes e combinações de sabores. Afinal, pizza boa é aquela que agrada todo mundo! ",
-    "imagem": "img/pizza.png",
+    "imagem": "img/pizzaV.jpeg",
     "pais": "Itália",
     "ingrediente1": [
         "2 ½ Xícaras de farinha de trigo",
@@ -93,7 +93,7 @@
  {
     "nome": "Zaalouk",
     "descricao": "O Zaalouk é um prato tradicional da culinária marroquina, preparado principalmente com berinjela, tomate, alho e especiarias. Ele possui uma textura cremosa e costuma ser servido como acompanhamento ou entrada, acompanhado de pão. Além de muito saboroso, é uma receita naturalmente vegana, perfeita para fechar nossa viagem por diferentes culturas e sabores! ",
-    "imagem": "img/receitaMarrocos.png",
+    "imagem": "img/zaalouk.jpeg",
     "pais": "Marrocos",
     "ingrediente1": [
         "2 berinjelas médias",

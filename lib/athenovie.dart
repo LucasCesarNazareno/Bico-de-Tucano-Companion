@@ -75,7 +75,7 @@ class AthenoviePage extends StatelessWidget {
                     SizedBox(height: 20),
 
                     Text(
-                      "Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa Informações da empresa ",
+                      "A Athenovie é uma empresa criada em 2026, com foco no desenvolvimento tecnológico e soluções personalizadas. Nosso objetivo é criar soluções criativas e inovadoras que aproximem a tecnologia do dia a dia das pessoas, tornando experiências delas no próprio mercado mais interessantes, acessíveis e significativas. \n\nAtuamos no desenvolvimento de jogos digitais, aplicativos móveis, sites, lojas virtuais e sistemas, buscando sempre unir criatividade, funcionalidade e inovação em nossos projetos. \n\nNosso nome surgiu da combinação de duas palavras: Athena, que representa sabedoria, conhecimento e aprendizado, e Vie, palavra francesa que significa vida. Essa união representa nossa visão de que a tecnologia pode,contribuir para transformar ideias em experiências que façam a diferença na vida das pessoas. \n\nAcreditamos que cada projeto possui um propósito e que a tecnologia deve ser desenvolvida pensando em quem vai utilizá-la. Por isso, valorizamos o acolhimento, a criatividade, o aprendizado contínuo e a satisfação dos nossos clientes.",
                       style: TextStyle(
                         fontSize: 15,
                         color: Color(0xFF343434),

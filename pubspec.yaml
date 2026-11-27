@@ -87,13 +87,24 @@ flutter:
     - img/nanaimo.png
     - img/pizza.png
     - img/chana.png
-    - img/mecanicaexploracao.png
-    - img/mecanicaminigame.png
-    - img/mecanicadialogo.png
     - img/logoJogo.png
     - img/logoAthenovie.png
     - img/receitaMarrocos.png
     - img/receitaBrasil.png
+    - img/zaalouk.jpeg
+    - img/pizzaV.jpeg
+    - img/mecanica1.jpeg
+    - img/mecanica3.jpeg
+    - img/jogo.jpeg
+    - img/fases.jpeg
+    - img/ceviche.jpeg
+    - img/personagem.jpeg
+    - img/athenovie.jpeg
+    - img/bico.jpeg
+    - img/m.png
+    - img/diario.png
+    - img/mecanica2.png
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:
