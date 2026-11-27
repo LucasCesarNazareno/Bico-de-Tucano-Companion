@@ -70,7 +70,7 @@ class ReceitaMarrocosPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 25),
                     const Text(
-                      "Receita a descidir",
+                      "Ingredientes",
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,

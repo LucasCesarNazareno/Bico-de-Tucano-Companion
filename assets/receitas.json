@@ -1,7 +1,7 @@
 [
   {
     "nome": "Ceviche vegano com banana-da-terra",
-    "descricao": "descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
+    "descricao": "O ceviche é um prato muito conhecido da culinária peruana, tradicionalmente preparado com peixe e temperos cítricos. Na nossa versão, ele ganha uma adaptação vegana, utilizando banana-da-terra como ingrediente principal. Uma receita diferente, refrescante e cheia de sabores! ",
     "imagem": "img/ceviche.png",
     "pais": "Peru",
     "ingrediente1": [
@@ -24,7 +24,7 @@
   },
  {
     "nome": "Nanaimo Bar vegano",
-    "descricao": "descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
+    "descricao": "O Nanaimo Bar é uma sobremesa tradicional canadense, originária da cidade de Nanaimo, na Colúmbia Britânica. É conhecido por suas três camadas: uma base crocante, um recheio cremoso e uma cobertura de chocolate. Na nossa versão, a receita é totalmente vegana, mostrando que até os doces tradicionais podem ganhar adaptações deliciosas! ",
     "imagem": "img/nanaimo.png",
     "pais": "Canadá",
     "ingrediente1": [
@@ -47,7 +47,7 @@
   },
  {
     "nome": "Pizza vegana",
-    "descricao": "descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
+    "descricao": "Quem não ama uma boa pizza? Esse prato é um dos maiores símbolos da culinária italiana e conquistou pessoas no mundo inteiro. Na nossa fase, Lucas aprende a preparar pizzas vegetarianas, explorando diferentes ingredientes e combinações de sabores. Afinal, pizza boa é aquela que agrada todo mundo! ",
     "imagem": "img/pizza.png",
     "pais": "Itália",
     "ingrediente1": [
@@ -68,7 +68,7 @@
   },
  {
     "nome": "Chana Masala",
-    "descricao": "descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
+    "descricao": "O Chana Masala é um prato muito popular na Índia, preparado principalmente com grão-de-bico e um molho cheio de temperos e especiarias. Além de saboroso, é uma receita naturalmente vegana e muito presente na culinária indiana. Uma ótima oportunidade para Lucas conhecer novos sabores e aprender um pouquinho mais sobre a alimentação baseada em vegetais! ",
     "imagem": "img/chana.png",
     "pais": "India",
     "ingrediente1": [
@@ -91,29 +91,19 @@
     ]
   },
  {
-    "nome": "vai ver ainda",
-    "descricao": "descricaaao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
+    "nome": "Zaalouk",
+    "descricao": "O Zaalouk é um prato tradicional da culinária marroquina, preparado principalmente com berinjela, tomate, alho e especiarias. Ele possui uma textura cremosa e costuma ser servido como acompanhamento ou entrada, acompanhado de pão. Além de muito saboroso, é uma receita naturalmente vegana, perfeita para fechar nossa viagem por diferentes culturas e sabores! ",
     "imagem": "img/receitaMarrocos.png",
     "pais": "Marrocos",
     "ingrediente1": [
-        "numero1",
-        "numero2",
-        "numero3",
-        "numero4",
-        "numero5"
-    ]
-  },
- {
-    "nome": "a decidir",
-    "descricao": "descricaaao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita descricao da receita ",
-    "imagem": "img/receitaBrasil.png",
-    "pais": "Brasil",
-    "ingrediente1": [
-        "numero1",
-        "numero2",
-        "numero3",
-        "numero4",
-        "numero5"
+        "2 berinjelas médias",
+        "3 tomates maduros",
+        "2 dentes de alho",
+        "2 colheres de sopa de azeite",
+        "1 colher de chá de páprica",
+        "1 colher de chá de cominho",
+        "Coentro ou salsinha a gosto",
+        "Sal a gosto"
     ]
   }
-]
+ ]
