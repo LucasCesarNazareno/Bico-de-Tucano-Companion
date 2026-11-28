@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -19,6 +18,7 @@ class MarrocosPage extends StatefulWidget {
 
 class _MarrocosPageState extends State<MarrocosPage> {
   List receitas = [];
+  int imagemAtual = 0;
 
   @override
   void initState() {
@@ -52,11 +52,49 @@ class _MarrocosPageState extends State<MarrocosPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.asset(
-              widget.fase["imagem"],
-              width: double.infinity,
-              height: 420,
-              fit: BoxFit.cover,
+            Container(
+              height: 260,
+              color: Colors.white,
+              child: Stack(
+                children: [
+                  PageView(
+                    onPageChanged: (index) {
+                      setState(() => imagemAtual = index);
+                    },
+                    children: [
+                      Image.asset(
+                        widget.fase["imagem"],
+                        fit: BoxFit.cover,
+                      ),
+                      Image.asset(
+                        "img/ModeloMarrocos.png",
+                        fit: BoxFit.cover,
+                      ),
+                    ],
+                  ),
+                  Positioned(
+                    bottom: 35,
+                    left: 0,
+                    right: 0,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(2, (index) {
+                        return Container(
+                          margin: const EdgeInsets.all(5),
+                          width: 10,
+                          height: 10,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: imagemAtual == index
+                                ? const Color(0xFF25492D)
+                                : Colors.grey.shade300,
+                          ),
+                        );
+                      }),
+                    ),
+                  ),
+                ],
+              ),
             ),
             Transform.translate(
               offset: const Offset(0, -25),

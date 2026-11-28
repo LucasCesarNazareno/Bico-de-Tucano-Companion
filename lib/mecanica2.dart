@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class Mecanica2Page extends StatelessWidget {
@@ -25,52 +24,53 @@ class Mecanica2Page extends StatelessWidget {
             Image.asset(
               mecanica["imagem"],
               width: double.infinity,
-              height: 420,
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
             ),
-            Transform.translate(
-              offset: const Offset(0, -25),
-              child: Container(
-                width: double.infinity,
-                padding: const EdgeInsets.fromLTRB(24, 28, 24, 35),
-                decoration: const BoxDecoration(
-                  color: Color(0xFFFFE8CA),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    topRight: Radius.circular(30),
-                  ),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.fromLTRB(24, 15, 24, 35),
+              decoration: const BoxDecoration(
+                color: Color(0xFFFFE8CA),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(30),
+                  topRight: Radius.circular(30),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      mecanica["titulo"],
-                      style: const TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF25492D),
-                      ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    mecanica["titulo"],
+                    style: const TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xFF25492D),
                     ),
+                  ),
+                  if ((mecanica["descricao"] ?? "")
+                      .toString()
+                      .trim()
+                      .isNotEmpty) ...[
                     const SizedBox(height: 5),
                     Text(
-                      mecanica["descricao"] ?? "",
+                      mecanica["descricao"],
                       style: const TextStyle(
                         fontSize: 16,
                         color: Color(0xFF344C38),
                         height: 1.5,
                       ),
                     ),
-                    const SizedBox(height: 20),
-                    Text(
-                      mecanica["informacoes"] ?? "",
-                      style: const TextStyle(
-                        fontSize: 15,
-                        color: Color(0xFF344C38),
-                        height: 1.6,
-                      ),
-                    ),
                   ],
-                ),
+                  const SizedBox(height: 10),
+                  Text(
+                    mecanica["informacoes"] ?? "",
+                    style: const TextStyle(
+                      fontSize: 15,
+                      color: Color(0xFF344C38),
+                      height: 1.6,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],

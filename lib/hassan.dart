@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-class HassanPage extends StatelessWidget {
+class HassanPage extends StatefulWidget {
   final Map<String, dynamic> personagem;
 
   const HassanPage({
@@ -10,7 +9,16 @@ class HassanPage extends StatelessWidget {
   });
 
   @override
+  State<HassanPage> createState() => _HassanPageState();
+}
+
+class _HassanPageState extends State<HassanPage> {
+  int imagemAtual = 0;
+
+  @override
   Widget build(BuildContext context) {
+    final personagem = widget.personagem;
+
     return Scaffold(
       backgroundColor: const Color(0xFFFFE8CA),
       appBar: AppBar(
@@ -22,11 +30,49 @@ class HassanPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.asset(
-              personagem["imagem"],
-              width: double.infinity,
+            Container(
               height: 420,
-              fit: BoxFit.cover,
+              color: Colors.white,
+              child: Stack(
+                children: [
+                  PageView(
+                    onPageChanged: (index) {
+                      setState(() => imagemAtual = index);
+                    },
+                    children: [
+                      Image.asset(
+                        personagem["imagem"],
+                        fit: BoxFit.cover,
+                      ),
+                      Image.asset(
+                        personagem["modelo"],
+                        fit: BoxFit.cover,
+                      ),
+                    ],
+                  ),
+                  Positioned(
+                    bottom: 35,
+                    left: 0,
+                    right: 0,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(2, (index) {
+                        return Container(
+                          margin: const EdgeInsets.all(5),
+                          width: 10,
+                          height: 10,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: imagemAtual == index
+                                ? const Color(0xFF25492D)
+                                : Colors.grey.shade300,
+                          ),
+                        );
+                      }),
+                    ),
+                  ),
+                ],
+              ),
             ),
             Transform.translate(
               offset: const Offset(0, -25),
